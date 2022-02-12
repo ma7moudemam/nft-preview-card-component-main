@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    text-align: center;
+    top: -100px;
+    position: relative;
+    box-shadow: 0 0 30px hsl(216, 50%, 16%);
+}
+
+.container .image img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.container .content {
+    padding: 20px;
+    text-align: left;
+}
+
+.container .content h4 {
+    color: white;
+    cursor: pointer;
+}
+
+.container .content h4:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .content p {
+    margin-top: 10px;
+    color: hsl(215, 51%, 70%);
+}
+
+.container .content .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container .content .details::before {
+    content: "";
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    background-color: hsl(215, 51%, 70%);
+    top: 420px;
+    left: 30px;
+}
+
+.container .content .details p:nth-child(1) {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .content .footer {
+    display: flex;
+    margin-top: 40px;
+}
+
+.container .content .footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 15px;
+}
+
+.container .content .footer p span {
+    color: #ddd;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.container .content .footer p span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .image:hover .icons {
+    top: 0;
+}
+
+.container .image .icons {
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 24px;
+    top: -110%;
+    height: 250px;
+    width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: hsl(178, 100%, 50%);
+    opacity: .5;
+    gap: 1rem;
+}
+
+.container .image .icons i {
+    position: absolute;
+    z-index: 5;
+    font-size: 22px;
+    color: white;
+}
